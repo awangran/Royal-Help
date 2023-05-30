@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Link } from "react-router-dom";
 
 
 export default function Login() {
@@ -16,7 +17,7 @@ export default function Login() {
 
         <button className="btn-1 marginup">Log In</button>
 
-        <p className="smallText">Crea una cuenta</p>
+         <Link className="smallText" to='/signup'>Sign Up</Link>
 
       </div>
     )
