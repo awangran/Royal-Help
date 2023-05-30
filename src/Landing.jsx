@@ -1,55 +1,29 @@
 import './App.css'
 import React from 'react'
+import Login from "./Login"
 import ReactDOM from 'react-dom/client'
+import { Link } from "react-router-dom";
 
 
-export default class Landing extends React.Component {
-  
-  render() {
-
+export default function Landing() {
     return (
       <div>
-          <div className="center">
-            <p className="title">Royal Home</p>
-            <Buttons/>
-            
-          </div>
-        
+        <div className="center">
+          <p className="title">Royal Home</p>
+          <Buttons />
+
+        </div>
+
       </div>
     );
-  }
 }
 
-class Buttons extends React.Component{
-  render() {
-    return(
+function Buttons() {
+    return (
       <div className="center">
-      <p className="tagline">Calcula tus notas para no tirarte el año</p>
-        <button className="btn-1" onClick={login}>Log In</button>
-        <button className="btn-1">Sign Up</button>
+        <p className="tagline">Calcula tus notas para no tirarte el año</p>
+      <Link className="btn-1" to='/login'>Log In</Link>
+        <Link className="btn-1" to='/signup'>Sign Up</Link>
       </div>
     )
-  }
-}
-
-class LogIn extends React.Component {
-
-  render() {
-
-    return(
-      <div className="center">
-        <p className="text1">Email</p>
-        <input type="text" name="name" className="input"/>
-        
-        <p className="text1">Password</p>
-        <input type="text" name="password" className="input"/>
-
-       
-        <button className="btn-1 marginup">Log In</button>
-        
-        <p className="smallText">Crea una cuenta</p>
-
-      </div>
-    )
-  }
 }
