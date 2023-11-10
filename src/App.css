@@ -115,3 +115,14 @@ p{
   cursor:pointer;
   
 }
+.error-box{
+  position: absolute;
+  top:20px;
+  margin:10px;
+  background-color:#ffdbdb;
+  padding: 25px 30px;
+  flex-direction:row;
+  display:flex;
+  transition:0.5s;
+  visibility:hidden;
+}
