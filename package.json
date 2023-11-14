@@ -12,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.17",
+    "flowbite": "^2.1.1",
+    "flowbite-react": "^0.6.4",
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {

@@ -8,22 +8,14 @@ import { Link } from "react-router-dom";
 export default function Landing() {
     return (
       <div>
-        <div className="center">
+        <div className="h-screen flex flex-col items-center justify-center">
           <p className="title">Royal Home</p>
-          <Buttons />
-
+            <p className="tagline">Calcula tus notas para no tirarte el año</p>
+          <Link className="btn-1 py-1 px-5 rounded-full my-5 w-2/5 text-center" to='/login'>Log In</Link>
+            <Link className="btn-1 py-1 px-5 rounded-full my-5 w-2/5 text-center" to='/signup'>Sign Up</Link>
+          </div>
         </div>
 
-      </div>
     );
 }
 
-function Buttons() {
-    return (
-      <div className="center">
-        <p className="tagline">Calcula tus notas para no tirarte el año</p>
-      <Link className="btn-1" to='/login'>Log In</Link>
-        <Link className="btn-1" to='/signup'>Sign Up</Link>
-      </div>
-    )
-}
