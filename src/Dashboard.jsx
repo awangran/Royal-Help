@@ -52,7 +52,7 @@ export default function Dashboard() {
       </div>
       <Overview/>
 
-      <div>
+      <div class="flex flex-row">
         <Courses/>
         <Report/>
       </div>
@@ -101,15 +101,43 @@ function Overview(){
 
 function Courses(){
   return(
-    <div>
-      <div class="text-violet-950 bg-cyan-400 rounded-full px-7 py-1 w-44 mx-10 text-center">Classes</div>
+    <div class="flex flex-col justify-center items-center md:items-start align-middle mt-3 mx-10 w-44">
+      <div class="text-violet-950 bg-cyan-400 rounded-full px-7 py-1 w-44  text-center my-3">Classes</div>
+
+      <div class="flex flex-col items-start justify-start bg-cyan-700 p-3  w-44 rounded-lg text-violet-950">
+        <button class="rounded-lg bg-white focus:bg-cyan-300 px-5 py-1 text-left w-full hover:bg-cyan-200 duration-300 my-2">Sociales</button>
+        <button class="rounded-lg bg-white focus:bg-cyan-300 px-5 py-1 text-left w-full hover:bg-cyan-200 duration-300 my-2">Science</button>
+        <button class="rounded-lg bg-white focus:bg-cyan-300 px-5 py-1 text-left w-full hover:bg-cyan-200 duration-300 my-2">English</button>
+        <button class="rounded-lg bg-white focus:bg-cyan-300 px-5 py-1 text-left w-full hover:bg-cyan-200 duration-300 my-2">Lectores Competentes</button>
+      </div>
     </div>
   )
 }
 
 function Report(){
   return(
-    <div>
+    <div class="w-full bg-violet-950/50 rounded-lg mx-4 px-5">
+      <p class="text-violet-800/50 mx-2 my-3">Reporte detallado</p>
+      <div class="flex flex-row  w-full bg-cyan-300 rounded-full px-3 py-2">
+        <p class="mx-2">Sociales</p>
+        <p class="ml-auto mx-2">Total asignatura: 98</p>
+      </div>
+
+      <div class="flex flex-row  w-11/12 bg-violet-300/75 rounded-lg px-3 py-2 m-3">
+        <p class="mx-2 text-white">Proceso Cognitivo y Procedimental</p>
+        <input class="appearance-none block w-12 text-sm bg-gray-200 text-gray-700 rounded py-1 px-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="proceso" type="text" placeholder="65%"/>
+        <p class="text-cyan-300 ml-auto">Total: 100%</p>
+
+      </div>
+
+      <div class="bg-violet-950/50 rounded-lg p-3 w-10/12 mx-5">
+        <p class="text-white/75 mx-5">Notas</p>
+        <div class="flex flex-row px-2 m-4 bg-violet-300/75 rounded-lg px-2 py-2 pr-6">
+          <p class="mx-2 text-white">Nota 1</p>
+          <input class="appearance-none block w-12 text-sm bg-gray-200 text-gray-700 rounded py-1 px-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ml-auto" id="nota" type="text" placeholder="82"/>
+        </div>
+      </div>
+      
     </div>
   )
 }
