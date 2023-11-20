@@ -147,3 +147,8 @@ p{
   text-align:center;
   cursor:default;
 }
+
+.hoverneon:hover{
+  transition:.3s;
+  stroke:#294042;
+}
